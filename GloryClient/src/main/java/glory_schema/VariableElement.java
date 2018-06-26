@@ -11,7 +11,6 @@ public class VariableElement {
     public static int specialPoints = 0;
     public static int id;
     public static boolean isLastPlayer = false;
-    //public final static String IP = "http://flogame-nsbm.rhcloud.com/WebResources/";
     public final static String IP = "http://localhost:8080/glorygame/WebResources/";
     public static OnlinePlayerStatus playerStatus = OnlinePlayerStatus.JOINED;
     public final static String GET = "GET";
