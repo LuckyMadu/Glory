@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="gamePane" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="glory_game_controller.GameWindowController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="720.0" layoutY="-5.0" opacity="0.82" pickOnBounds="true">
+         <image>
+            <Image url="@../images/background.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="52.0" layoutY="68.0" text="Select Your Letters" textFill="WHITE">
+         <font>
+            <Font name="Calibri Light" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="backButton" layoutY="569.0" mnemonicParsing="false" onAction="#backAction" prefHeight="20.0" prefWidth="45.0" text="Back" />
+      <Button fx:id="exitButton" layoutX="674.0" layoutY="569.0" mnemonicParsing="false" onAction="#exitAction" prefHeight="20.0" prefWidth="45.0" text="Exit" />
+      <Label layoutX="84.0" layoutY="277.0" prefHeight="41.0" prefWidth="537.0" styleClass="miniheader" text="Select any letter you want to change without initials...." textFill="#dd1010">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font></Label>
+      <Label fx:id="userNameLabel" layoutX="28.0" layoutY="14.0" styleClass="miniheader" text="----" textFill="WHITE" />
+      <AnchorPane fx:id="letterPane" layoutX="11.0" layoutY="322.0" prefHeight="174.0" prefWidth="698.0">
+                  <children>
+            <TextField fx:id="letterFive" alignment="CENTER" layoutX="395.0" layoutY="61.0" onMouseClicked="#getSelectedText" prefHeight="52.0" prefWidth="59.0" styleClass="buttonTextbox">
+               <font>
+                  <Font name="Calibri Light" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </TextField>
+            <TextField fx:id="letterNine" alignment="CENTER" layoutX="636.0" layoutY="61.0" onMouseClicked="#getSelectedText" prefHeight="52.0" prefWidth="59.0" styleClass="buttonTextbox">
+               <font>
+                  <Font name="Calibri Light" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </TextField>
+            <TextField fx:id="letterEight" alignment="CENTER" layoutX="576.0" layoutY="61.0" onMouseClicked="#getSelectedText" prefHeight="52.0" prefWidth="59.0" styleClass="buttonTextbox">
+               <font>
+                  <Font name="Calibri Light" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </TextField>
+            <TextField fx:id="letterSeven" alignment="CENTER" layoutX="516.0" layoutY="61.0" onMouseClicked="#getSelectedText" prefHeight="52.0" prefWidth="59.0" styleClass="buttonTextbox">
+               <font>
+                  <Font name="Calibri Light" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </TextField>
+            <TextField fx:id="letterSix" alignment="CENTER" layoutX="456.0" layoutY="61.0" onMouseClicked="#getSelectedText" prefHeight="52.0" prefWidth="59.0" styleClass="buttonTextbox">
+               <font>
+                  <Font name="Calibri Light" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </TextField>
+            <TextField fx:id="letterFour" alignment="CENTER" layoutX="335.0" layoutY="61.0" onMouseClicked="#getSelectedText" prefHeight="52.0" prefWidth="59.0" styleClass="buttonTextbox">
+               <font>
+                  <Font name="Calibri Light" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </TextField>
+            <TextField fx:id="letterThree" alignment="CENTER" layoutX="276.0" layoutY="61.0" onMouseClicked="#getSelectedText" prefHeight="52.0" prefWidth="59.0" styleClass="buttonTextbox">
+               <font>
+                  <Font name="Calibri Light" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </TextField>
+            <TextField fx:id="letterTwo" alignment="CENTER" layoutX="213.0" layoutY="61.0" onMouseClicked="#getSelectedText" prefHeight="52.0" prefWidth="59.0" styleClass="buttonTextbox">
+               <font>
+                  <Font name="Calibri Light" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </TextField>
+            <TextField fx:id="initialLetterThree" alignment="CENTER" disable="true" layoutX="144.0" layoutY="61.0" onMouseClicked="#getSelectedText" prefHeight="52.0" prefWidth="59.0" styleClass="buttonTextbox" />
+            <TextField fx:id="initialLetterOne" alignment="CENTER" disable="true" layoutX="79.0" layoutY="61.0" prefHeight="52.0" prefWidth="59.0">
+               <font>
+                  <Font name="Calibri Light" size="20.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="initialLetterTwo" alignment="CENTER" disable="true" layoutX="14.0" layoutY="61.0" prefHeight="52.0" prefWidth="59.0">
+               <font>
+                  <Font name="Calibri Light" size="20.0" />
+               </font>
+            </TextField>
+            <Button fx:id="letterChangeButton" layoutX="545.0" layoutY="133.0" mnemonicParsing="false" onAction="#letterChangeAction" prefHeight="26.0" prefWidth="120.0" styleClass="lionbutton" text="CHANGE">
+               <font>
+                  <Font name="Calibri Light" size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="timerLabel" layoutX="313.0" layoutY="-5.0" prefHeight="66.0" prefWidth="73.0" text="Time" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Light" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="letterBag" fitHeight="197.0" fitWidth="158.0" layoutX="561.0" layoutY="38.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/sac.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="381.0" layoutY="1.0" prefHeight="27.0" prefWidth="334.0" text="Enter How many Vowels &amp; Consonants " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="noOfVowels" alignment="CENTER" layoutX="588.0" layoutY="143.0" prefHeight="17.0" prefWidth="43.0" promptText="V" styleClass="defaultText">
+         <font>
+            <Font name="Calibri Light" size="24.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="noOfConsonants" alignment="CENTER" layoutX="640.0" layoutY="143.0" prefHeight="17.0" prefWidth="43.0" promptText="C" styleClass="defaultText">
+         <font>
+            <Font name="Calibri Light" size="24.0" />
+         </font>
+      </TextField>
+      <Button fx:id="requestButton" layoutX="594.0" layoutY="193.0" mnemonicParsing="false" onAction="#getRequiredLetters" prefHeight="27.0" prefWidth="87.0" style="-fx-background-color: green;" text="REQUEST" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="501.0" layoutY="18.0" prefHeight="27.0" prefWidth="120.0" text="do you need ?" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="109.0" prefHeight="27.0" prefWidth="146.0" text="V= vowels" textFill="#320b8d">
+         <font>
+            <Font name="Arial" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="187.0" layoutY="109.0" prefHeight="32.0" prefWidth="174.0" text="C=consonent" textFill="#320b8d">
+         <font>
+            <Font name="Arial" size="28.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
