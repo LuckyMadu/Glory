@@ -1,0 +1,2 @@
+# Glory
+Scrabble Game
