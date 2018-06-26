@@ -10,7 +10,8 @@ After installed tomcat (If havent) , First Open GloryServer in Game folder in yo
 
 	Go to the:
 	GloryClient -> glory_schema -> VariableElement.java. Make changes to the following   
-             Lines.		
+        Lines.
+	
 	Change the port(your port instead of 8080)		
            (public final static String IP = "http://localhost:8080/ glorygame /WebResources/";)
             Then run the Game Client.  
